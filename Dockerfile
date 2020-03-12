@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:18.04
 
 #
 # UTF-8 by default
@@ -17,4 +17,4 @@ RUN apt-get -qq update
 RUN apt-get -qqy install zulu-8=8.13.0.5
 
 RUN apt-mark hold zulu-8
-RUN apt-get update && apt-get -y upgrade
+#RUN apt-get update && apt-get -y upgrade
